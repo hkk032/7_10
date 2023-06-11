@@ -34,5 +34,11 @@ public class HomePage extends abstractComponents {
 		explicitWaitToAppearWebElement(menNavDrop);
 		highTopNav.click();
 	}
+	
+//	calling next page
+	public ProductResult product() {
+		ProductResult pr = new ProductResult(driver);
+		return pr;
+	}
 
 }

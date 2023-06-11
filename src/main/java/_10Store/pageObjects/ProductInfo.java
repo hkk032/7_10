@@ -48,4 +48,9 @@ public class ProductInfo extends abstractComponents {
 		}
 	}
 	
+	public CartDetails cart() {
+		CartDetails cd = new CartDetails(driver);
+		return cd;
+	}
+	
 }

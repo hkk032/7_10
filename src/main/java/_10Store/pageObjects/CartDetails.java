@@ -86,4 +86,9 @@ public class CartDetails extends abstractComponents {
 		checkout.click();
 	}
 	
+	public BuyerInfo custDetails() {
+		BuyerInfo bi = new BuyerInfo(driver);
+		return bi;
+	}
+	
 }

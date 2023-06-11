@@ -2,15 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-05T10:37:37 IST" name="Default suite" finished-at="2023-06-05T10:37:37 IST" duration-ms="88">
+  <suite started-at="2023-06-11T21:49:11 IST" name="Default suite" finished-at="2023-06-11T21:49:28 IST" duration-ms="17632">
     <groups>
     </groups>
-    <test started-at="2023-06-05T10:37:37 IST" name="Default test" finished-at="2023-06-05T10:37:37 IST" duration-ms="88">
+    <test started-at="2023-06-11T21:49:11 IST" name="Default test" finished-at="2023-06-11T21:49:28 IST" duration-ms="17632">
       <class name="_10Store.testComponents.VerifySetup">
-        <test-method signature="verifySetup()[pri:0, instance:_10Store.testComponents.VerifySetup@2b91004a]" started-at="2023-06-05T10:37:37 IST" name="verifySetup" finished-at="2023-06-05T10:37:37 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="startApplication()[pri:0, instance:_10Store.testComponents.VerifySetup@18d87d80]" started-at="2023-06-11T21:49:11 IST" name="startApplication" finished-at="2023-06-11T21:49:23 IST" duration-ms="12151" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySetup -->
+        </test-method> <!-- startApplication -->
+        <test-method signature="startTest()[pri:0, instance:_10Store.testComponents.VerifySetup@18d87d80]" started-at="2023-06-11T21:49:23 IST" name="startTest" finished-at="2023-06-11T21:49:27 IST" duration-ms="4056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:_10Store.testComponents.VerifySetup@18d87d80]" started-at="2023-06-11T21:49:27 IST" name="closeApplication" finished-at="2023-06-11T21:49:28 IST" duration-ms="1354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
       </class> <!-- _10Store.testComponents.VerifySetup -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

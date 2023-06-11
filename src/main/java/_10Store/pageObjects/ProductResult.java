@@ -67,4 +67,9 @@ public class ProductResult extends abstractComponents {
 		}
 	}
 	
+	public ProductInfo prodDetails() {
+		ProductInfo pi = new ProductInfo(driver);
+		return pi;
+	}
+	
 }
