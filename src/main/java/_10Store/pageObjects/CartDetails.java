@@ -61,6 +61,7 @@ public class CartDetails extends abstractComponents {
 		}
 	}
 	
+//	splitting product price to remove Rs and get only number
 	public void splitProdPrice() {
 		allProducts();
 		allQty();
@@ -75,6 +76,7 @@ public class CartDetails extends abstractComponents {
 		}
 	}
 	
+//	checking if final quote is equal to qty*price of every product present in cart
 	public void finalQuote() {
 		splitProdPrice();
 		String finalquote = quote.getText().split(" ")[1].trim();

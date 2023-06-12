@@ -41,14 +41,14 @@ public class ProductResult extends abstractComponents {
 		highTopCheck.click();
 	}
 	
-	public void selectProduct() {		
+	public void selectProduct(String pName) {		
 		while(itr.hasNext()) {
 			WebElement name;
 			try {
 				name = (WebElement) itr.next();	
 				prodName = name.getText();
 				System.out.println(prodName);
-				if(prodName.equalsIgnoreCase("209 WHITE YELLOW GRAPHIC HIGH-TOP SNEAKER")) {
+				if(prodName.equalsIgnoreCase(pName)) {
 					finalProduct.click();
 					break;
 				}
@@ -59,7 +59,7 @@ public class ProductResult extends abstractComponents {
 				name = (WebElement) itr.next();
 				prodName = name.getText();
 				System.out.println(prodName);
-				if(prodName.equalsIgnoreCase("209 WHITE YELLOW GRAPHIC HIGH-TOP SNEAKER")) {
+				if(prodName.equalsIgnoreCase(pName)) {
 					finalProduct.click();
 					break;
 				}

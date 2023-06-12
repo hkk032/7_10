@@ -33,7 +33,7 @@ public class BaseTest {
 		
 		home.navigate();
 		result.filterProduct();
-		result.selectProduct();
+//		result.selectProduct();
 		info.captureSS();
 		info.toCart();
 		cart.loadCart();
