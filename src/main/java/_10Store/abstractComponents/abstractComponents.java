@@ -2,7 +2,9 @@ package _10Store.abstractComponents;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -28,6 +30,10 @@ public class abstractComponents {
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(findObject));
 //	}
 	
+	Date d = new Date();
+	SimpleDateFormat sdf = new SimpleDateFormat("MM_dd_yyyy hh_mm_ss");
+	String date = sdf.format(d);
+	
 	public void explicitWaitToAppearWebElement(WebElement findElement) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 //		as we'll send the element through test, so sending the By locator to method
@@ -45,11 +51,11 @@ public class abstractComponents {
 	
 	public void fullScreenshot() throws IOException {
 		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotFile , new File("product.png"));
+		FileUtils.copyFile(screenshotFile , new File(System.getProperty("user.dir")+"\\screenshots\\"+"product "+date+".png"));
 	}
 	
 	public void partialScreenshot() throws IOException {
 		File file = driver.findElement(By.cssSelector(".rte p")).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(file, new File("product info.png"));
+		FileUtils.copyFile(file, new File(System.getProperty("user.dir")+"\\screenshots\\"+"product info "+date+".png"));
 	}
 }

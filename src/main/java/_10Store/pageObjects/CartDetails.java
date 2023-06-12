@@ -62,6 +62,8 @@ public class CartDetails extends abstractComponents {
 	}
 	
 	public void splitProdPrice() {
+		allProducts();
+		allQty();
 		String ff;		
 		for(int i=0; i<price.size(); i++) {
 			String one = price.get(i).split(",")[0];
@@ -74,6 +76,7 @@ public class CartDetails extends abstractComponents {
 	}
 	
 	public void finalQuote() {
+		splitProdPrice();
 		String finalquote = quote.getText().split(" ")[1].trim();
 		String q1 = finalquote.split(",")[0];
 		String q2 = finalquote.split(",")[1];
@@ -83,6 +86,7 @@ public class CartDetails extends abstractComponents {
 	}
 	
 	public void cartCheckout() {
+		finalQuote();
 		checkout.click();
 	}
 	

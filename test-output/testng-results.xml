@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-11T21:49:11 IST" name="Default suite" finished-at="2023-06-11T21:49:28 IST" duration-ms="17632">
+  <suite started-at="2023-06-12T15:02:53 IST" name="Suite" finished-at="2023-06-12T15:03:50 IST" duration-ms="57100">
     <groups>
     </groups>
-    <test started-at="2023-06-11T21:49:11 IST" name="Default test" finished-at="2023-06-11T21:49:28 IST" duration-ms="17632">
+    <test started-at="2023-06-12T15:02:53 IST" name="EndToEnd" finished-at="2023-06-12T15:03:50 IST" duration-ms="57100">
       <class name="_10Store.testComponents.VerifySetup">
-        <test-method is-config="true" signature="startApplication()[pri:0, instance:_10Store.testComponents.VerifySetup@18d87d80]" started-at="2023-06-11T21:49:11 IST" name="startApplication" finished-at="2023-06-11T21:49:23 IST" duration-ms="12151" status="PASS">
+        <test-method is-config="true" signature="startApplication()[pri:0, instance:_10Store.testComponents.VerifySetup@51e69659]" started-at="2023-06-12T15:02:53 IST" name="startApplication" finished-at="2023-06-12T15:03:13 IST" duration-ms="20248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApplication -->
-        <test-method signature="startTest()[pri:0, instance:_10Store.testComponents.VerifySetup@18d87d80]" started-at="2023-06-11T21:49:23 IST" name="startTest" finished-at="2023-06-11T21:49:27 IST" duration-ms="4056" status="PASS">
+        <test-method signature="startTest()[pri:0, instance:_10Store.testComponents.VerifySetup@51e69659]" started-at="2023-06-12T15:03:13 IST" name="startTest" finished-at="2023-06-12T15:03:16 IST" duration-ms="2842" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:_10Store.testComponents.VerifySetup@18d87d80]" started-at="2023-06-11T21:49:27 IST" name="closeApplication" finished-at="2023-06-11T21:49:28 IST" duration-ms="1354" status="PASS">
+        <test-method signature="buyProduct()[pri:0, instance:_10Store.testComponents.VerifySetup@51e69659]" started-at="2023-06-12T15:03:16 IST" name="buyProduct" finished-at="2023-06-12T15:03:50 IST" depends-on-methods="_10Store.testComponents.VerifySetup.startTest" duration-ms="33530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyProduct -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:_10Store.testComponents.VerifySetup@51e69659]" started-at="2023-06-12T15:03:50 IST" name="closeApplication" finished-at="2023-06-12T15:03:50 IST" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- _10Store.testComponents.VerifySetup -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- EndToEnd -->
+  </suite> <!-- Suite -->
 </testng-results>
