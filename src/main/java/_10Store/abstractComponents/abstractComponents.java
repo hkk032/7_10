@@ -35,7 +35,7 @@ public class abstractComponents {
 	String date = sdf.format(d);
 	
 	public void explicitWaitToAppearWebElement(WebElement findElement) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 //		as we'll send the element through test, so sending the By locator to method
 		wait.until(ExpectedConditions.visibilityOf(findElement));
 	}

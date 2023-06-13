@@ -36,11 +36,6 @@ public class ProductResult extends abstractComponents {
 	String prodName;
 	List<WebElement> c;
 	
-	public void filterProduct() throws InterruptedException {
-		threadSleep();
-		highTopCheck.click();
-	}
-	
 	public void selectProduct(String pName) {		
 		while(itr.hasNext()) {
 			WebElement name;

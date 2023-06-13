@@ -79,38 +79,6 @@ public class VerifySetup {
 		home = new HomePage(driver);
 	}
 	
-	@Test
-	public void startTest() {
-		home.navigate();
-	}
-	
-	@Test(dependsOnMethods= {"startTest"}, dataProvider= "prodData")
-	public void buyProduct(HashMap<String, String> name) throws InterruptedException, IOException {
-		ProductResult pr = home.product();
-		pr.filterProduct();
-		pr.selectProduct(name.get("name"));
-		
-		ProductInfo pi = pr.prodDetails();
-		pi.captureSS();
-		pi.toCart();
-		
-		CartDetails cd = pi.cart();
-		cd.loadCart();
-		cd.cartCheckout();
-		
-		BuyerInfo bi = cd.custDetails();
-		bi.fillDetails();
-		bi.payment();
-	}
-	
-	@DataProvider
-	public Object[][] prodData() throws IOException {
-//		User data reader to get required product name and click on it
-		DataReader dr = new DataReader();
-		List<HashMap<String, String>> map = dr.getJsonDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\_10Store\\data\\productDetails.json");
-		return new Object[][] {{map.get(0)}};
-	}
-	
 	@AfterTest(alwaysRun=true)
 	public void closeApplication() {
 		driver.close();
