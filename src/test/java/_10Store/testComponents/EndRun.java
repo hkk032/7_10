@@ -49,6 +49,7 @@ public class EndRun extends VerifySetup {
 		bi.payment();
 	}
 	
+//	JSON data provider
 	@DataProvider
 	public Object[][] prodData() throws IOException {
 //		User data reader to get required product name and click on it
@@ -57,6 +58,7 @@ public class EndRun extends VerifySetup {
 		return new Object[][] {{map.get(0)}};
 	}
 	
+//	Excel data provider
 	@DataProvider
 	public Object[][] aDetails() throws IOException {
 		FileInputStream fi = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\java\\_10Store\\data\\UserAddress.xlsx");
@@ -79,7 +81,6 @@ public class EndRun extends VerifySetup {
 //				extracting & capturing cell data
 				XSSFCell cell = row.getCell(j);
 				data[i][j] = formatter.formatCellValue(cell);
-//				data[i][j]=row.getCell(j);
 			}
 		}
 		
