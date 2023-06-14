@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="_10Store.testComponents.VerifySetup">
+      <class name="_10Store.testComponents.exceldata">
         <methods>
-          <include name="startTest"/>
-          <include name="startApplication"/>
-          <include name="closeApplication"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- _10Store.testComponents.VerifySetup -->
+      </class> <!-- _10Store.testComponents.exceldata -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

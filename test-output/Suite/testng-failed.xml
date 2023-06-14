@@ -8,14 +8,15 @@
     <groups>
       <run>
         <include name="ErrorValidations"/>
-        <include name="BuyProduct"/>
+        <include name="Product"/>
       </run>
     </groups>
     <classes>
       <class name="_10Store.testComponents.EndRun">
         <methods>
+          <include name="userDetails" invocation-numbers="0"/>
           <include name="startApplication"/>
-          <include name="buyProduct" invocation-numbers="0"/>
+          <include name="buyProduct"/>
           <include name="closeApplication"/>
           <include name="startTest"/>
         </methods>

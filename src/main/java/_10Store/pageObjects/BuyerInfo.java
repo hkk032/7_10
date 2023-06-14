@@ -56,22 +56,23 @@ public class BuyerInfo extends abstractComponents {
 	@FindBy(css="div[class*='WD4IV'] button")
 	WebElement pay;
 	
-	public void fillDetails() {
+	public void fillDetails(String ctry, String mail, String fname, String lname, String ad1, String ad2, String stte, String cty, String pincode, String phn) throws InterruptedException {
 		Select s = new Select(country);
-		s.selectByVisibleText("India");
+		s.selectByVisibleText(ctry);
 		
-		email.sendKeys("hkushwaha345@gmail.com");
-		fName.sendKeys("Hemant");
-		lName.sendKeys("Kushwaha");
-		add1.sendKeys("B2 507, Gagan LaWish, Sr No 12/2");
-		add2.sendKeys("Behind Dharmavat Petrol Pump, Pisoli Road");
+		email.sendKeys(mail);
+		fName.sendKeys(fname);
+		lName.sendKeys(lname);
+		add1.sendKeys(ad1);
+		add2.sendKeys(ad2);
 		
+		threadSleep();
 		Select s1 = new Select(state);
-		s1.selectByVisibleText("Maharashtra");
+		s1.selectByValue(stte);
 		
-		city.sendKeys("Pune");
-		pin.sendKeys("411060");
-		phone.sendKeys("9049746735");
+		city.sendKeys(cty);
+		pin.sendKeys(pincode);
+		phone.sendKeys(phn);
 		
 		submit.click();
 	}
